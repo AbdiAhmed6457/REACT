@@ -1,16 +1,18 @@
-import './Card.css';
 import profile from "./assets/image.png";
+import styles from "./Card.module.css";
+import PropTypes from "prop-types";
 
-function Card(){
+function Card( props){
 
 
 
 
 
     return(
-         <div className="card">
-            <img className='card-image' src={profile} alt="Description" />
-            <h2>Abdi</h2>
+         <div className= {styles.card}>
+            <img className={styles.cardImage}  src={profile} alt="Description" />
+
+            <h2>Hamza</h2>
             <p>Computer science student</p>
 
          </div>
@@ -19,4 +21,8 @@ function Card(){
     )
 }
 
-export default Card;
+  Card.defaultProps = {
+    name: "Geust",
+  }
+
+export default Card

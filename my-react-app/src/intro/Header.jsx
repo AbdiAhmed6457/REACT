@@ -1,3 +1,4 @@
+import profile from "./assets/image.png";
 
 function Header(){
 
@@ -10,6 +11,7 @@ function Header(){
                 <li><a href="#">contact</a></li>
                 <li><a href="#">about</a></li>
             </ul>
+              <img className="card-image" src={profile} alt="" />
             <hr />
         </header>
     )
