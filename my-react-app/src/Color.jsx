@@ -5,6 +5,7 @@ function Color() {
 
       const handleColor = (e) => {
         setColor(e.target.value);
+        
       }
     return(
        
